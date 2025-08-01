@@ -1,0 +1,189 @@
+
+body {
+  font-family: 'Orbitron', sans-serif;
+  margin: 0;
+  background: black;
+  color: #e0e7ff;
+  perspective: 1200px;
+  overflow-x: hidden;
+}
+.header-container img {
+  position: absolute;
+  left: 10;
+  top: 0;
+}
+.neon-text {
+  color: #fff;
+  text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff, 0 0 40px #0ff, 0 0 80px #0ff;
+}
+.neon-subtext {
+  color: #a0f0f0;
+  text-shadow: 0 0 3px #0ff, 0 0 6px #0ff, 0 0 10px #0ff;
+}
+.neon-box {
+  background-color: #000000cc;
+  box-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff, 0 0 40px #0ff;
+}
+#bgCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  display: block;
+  background: transparent;
+}
+#bgImage {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  filter: brightness(0.4);
+  z-index: 0;
+}
+.content-wrapper {
+  position: relative;
+  z-index: 10;
+  max-width: 20rem;
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  margin: auto;
+}
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background: #0f172a;
+      color: #e0e7ff;
+      perspective: 1200px;
+      overflow-x: hidden;
+    }
+
+    h1 {
+      font-family: 'Perfect Dark (BRK)', sans-serif;
+    }
+
+    h2,
+    h3 {
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    /* 3D card animation */
+    .card-3d {
+      transform-style: preserve-3d;
+      transition: transform 0.6s ease, box-shadow 0.6s ease;
+      cursor: pointer;
+      will-change: transform;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+      border-radius: 1.5rem;
+      background-clip: padding-box;
+    }
+
+    .card-3d:hover {
+      transform: rotateY(15deg) rotateX(10deg) scale(1.05);
+      box-shadow: 0 25px 50px rgba(16, 185, 129, 0.7);
+      z-index: 10;
+    }
+
+    /* 3D image hover effect */
+    .img-3d {
+      border-radius: 1rem;
+      transition: transform 0.6s ease, box-shadow 0.6s ease;
+      will-change: transform;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+      cursor: pointer;
+      display: block;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .img-3d:hover {
+      transform: rotateY(15deg) rotateX(10deg) scale(1.05);
+      box-shadow: 0 25px 50px rgba(16, 185, 129, 0.7);
+      z-index: 10;
+    }
+
+    /* Social icons 3D hover */
+    .social-icon {
+      transition: transform 0.3s ease, color 0.3s ease;
+      will-change: transform, color;
+    }
+
+    .social-icon:hover {
+      transform: translateY(-6px) rotate(15deg) scale(1.2);
+      color: #10b981;
+    }
+
+    /* Cleaned up logo-below-icons class */
+    .logo-below-icons {
+      margin-top: 2rem;
+      justify-content: flex-start;
+    }
+
+    /* Animated gradient text */
+    .gradient-text {
+      background: linear-gradient(270deg, #10b981, #3b82f6, #9333ea, #10b981);
+      background-size: 800% 800%;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: gradientShift 8s ease infinite;
+    }
+
+    @keyframes gradientShift {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    /* Hero image container with curved corners and smaller size */
+    .hero-image-container {
+      position: relative;
+      width: 90vw;
+      max-width: 900px;
+      height: 60vh;
+      max-height: 600px;
+      
+      perspective: 1200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 2rem;
+      border-radius: 1.5rem;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
+    }
+
+    .hero-image-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 1.5rem;
+      transition: transform 0.6s ease, box-shadow 0.6s ease;
+      transform-style: preserve-3d;
+      cursor: pointer;
+      will-change: transform;
+    }
+
+    .hero-image-container img:hover {
+      transform: rotateY(1deg) rotateX(1deg) scale(1.05);
+      box-shadow: 0 25px 50px rgba(16, 185, 129, 0.7);
+      z-index: 10;
+    }
+
+    @media (max-width: 768px) {
+      .hero-image-container {
+        height: 40vh;
+        max-height: 400px;
+      }
+    }

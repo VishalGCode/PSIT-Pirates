@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href="https://fonts.cdnfonts.com/css/perfect-dark-brk" rel="stylesheet">
+
+
+  <style>
+    @import url('https://fonts.cdnfonts.com/css/perfect-dark-brk');
+  </style>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>
+    PIRATES
+  </title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&amp;family=Roboto:wght@400;700&amp;display=swap"
+    rel="stylesheet" />
+  <!-- CSS file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="min-h-screen flex flex-col">
+  <!-- Header -->
+  <header class="bg-gradient-to-r from-indigo-900 via-purple-900 to-indigo-900 shadow-lg sticky top-0 z-50">
+    <nav class="container mx-auto flex items-center justify-between p-4">
+      <div class="flex items-center space-x-2">
+        <img alt="PSIT PIRATES LOGO" class="mx-7 " height="70" src="assets/PSIT-PIRATES.jpg" width="70" />
+        <a class="text-3xl font-bold text-transparent gradient-text select-none"
+          style="font-family: 'Orbitron', sans-serif;" href="index.html">
+          PIRATES
+        </a>
+      </div>
+      <ul class="hidden md:flex space-x-8 text-lg font-fullbold">
+        <li>
+          <a class="hover:text-green-400 transition" href="#events">
+            Events
+          </a>
+        </li>
+        <li>
+          <a class="hover:text-green-400 transition" href="#collaborators">
+            Collaborators
+          </a>
+        </li>
+        <li>
+          <a class="hover:text-green-400 transition" href="#team">
+            Team
+          </a>
+        </li>
+        <li>
+          <a class="hover:text-green-400 transition" href="#contact">
+            Contact
+          </a>
+        </li>
+      </ul>
+      <button class="md:hidden text-green-400 focus:outline-none" id="menu-btn">
+        <i class="fas fa-bars fa-2x">
+        </i>
+      </button>
+    </nav>
+    <div class="hidden md:hidden bg-indigo-900" id="mobile-menu">
+      <ul class="flex flex-col p-4 space-y-6 text-lg font-fullbold">
+        <li>
+          <a class="block hover:text-green-400 transition" href="#events">
+            Events
+          </a>
+        </li>
+        <li>
+          <a class="block hover:text-green-400 transition" href="#collaborators">
+            Collaborators
+          </a>
+        </li>
+        <li>
+          <a class="block hover:text-green-400 transition" href="#team">
+            Team
+          </a>
+        </li>
+        <li>
+          <a class="block hover:text-green-400 transition" href="#contact">
+            Contact
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <!-- Hero Section -->
+  <section
+    class="relative flex flex-col items-center justify-center text-center py-10 px-6 bg-gradient-to-b from-indigo-900 via-indigo-800 to-indigo-900 overflow-hidden">
+    <div class="hero-image-container">
+      <img alt="3D rendered neon-lit gaming controller floating in dark space with glowing effects" height="600"
+        loading="lazy" src="assets/woman-wearing-vr-glasses-gaming.jpg" width="900" />
+    </div>
+    <h1 class="text-4xl md:text-5xl font-orbitron font-extrabold gradient-text mb-4 select-none max-w-4xl px-4">
+      Experience the Ultimate Gaming Events
+    </h1>
+    <p class="max-w-3xl text-base md:text-lg text-green-300 mb-8 px-4">
+      Join the most thrilling gaming tournaments, meet collaborators, and connect with the team behind the scenes.
+    </p>
+    <div class="flex space-x-6">
+      <a class="inline-block bg-green-500 hover:bg-green-600 text-white font-semibold px-8 py-4 rounded-lg shadow-lg transition transform hover:scale-105"
+        href="#events">
+        Explore Events
+      </a>
+      <a class="inline-block bg-transparent border-2 border-green-500 hover:border-green-600 text-green-500 hover:text-green-600 font-semibold px-8 py-4 rounded-lg shadow-lg transition transform hover:scale-105"
+        href="registrationform.html" target="_blank" rel="noopener noreferrer"
+        aria-label="Register for Upcoming Events">
+        Register Now
+      </a>
+    </div>
+  </section>
+  <!-- Events Section -->
+  <section class="container mx-auto px-6 py-16" id="events">
+    <h2 class="text-4xl font-bold text-center mb-12 gradient-text select-none"
+      style="font-family: 'Orbitron', sans-serif;">
+      Upcoming Gaming Events
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+      <article class="card-3d p-6 bg-indigo-800 rounded-xl shadow-lg hover:shadow-green-500/70 transition-shadow">
+        <img alt="3D esports tournament stage with cheering crowd and colorful lights"
+          class="img-3d rounded-lg mb-4 h-48 w-full object-cover" height="250" loading="lazy" src="assets/upcoming1.jpg"
+          width="400" />
+        <h3 class="text-2xl font-semibold mb-2">
+          Global Esports Championship 2024
+        </h3>
+        <p class="text-green-300 mb-4">
+          Date: July 15-20, 2024
+        </p>
+        <p>
+          Compete with the best players worldwide in this high-stakes esports tournament featuring multiple popular
+          games.
+        </p>
+      </article>
+      <article class="card-3d p-6 bg-indigo-800 rounded-xl shadow-lg hover:shadow-green-500/70 transition-shadow">
+        <img alt="3D virtual reality gaming event with players wearing VR headsets in futuristic arena"
+          class="img-3d rounded-lg mb-4 h-48 w-full object-cover" height="250" loading="lazy" src="assets/upcoming2.jpg"
+          width="400" />
+        <h3 class="text-2xl font-semibold mb-2">
+          Virtual Reality Gaming Expo
+        </h3>
+        <p class="text-green-300 mb-4">
+          Date: August 10-12, 2024
+        </p>
+        <p>
+          Explore the latest VR games and technology, with live demos and immersive experiences for all skill levels.
+        </p>
+      </article>
+      <article class="card-3d p-6 bg-indigo-800 rounded-xl shadow-lg hover:shadow-green-500/70 transition-shadow">
+        <img alt="3D retro gaming festival with classic arcade machines and neon signs"
+          class="img-3d rounded-lg mb-4 h-48 w-full object-cover" height="250" loading="lazy" src="assets/upcoming3.jpg"
+          width="400" />
+        <h3 class="text-2xl font-semibold mb-2">
+          Retro Gaming Festival
+        </h3>
+        <p class="text-green-300 mb-4">
+          Date: September 5-7, 2024
+        </p>
+        <p>
+          Celebrate classic games and nostalgia with tournaments, cosplay, and arcade challenges from the golden era of
+          gaming.
+        </p>
+      </article>
+    </div>
+  </section>
+  <!-- Collaborators Section -->
+  <section class="bg-indigo-900 py-16 px-6" id="collaborators">
+    <h2 class="text-4xl font-bold text-center mb-12 gradient-text select-none"
+      style="font-family: 'Orbitron', sans-serif;">
+      Our Collaborators
+    </h2>
+    <div class="max-w-6xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-10">
+      <div
+        class="card-3d bg-indigo-800 rounded-xl p-6 flex flex-col items-center hover:shadow-green-500/70 transition-shadow">
+        <img alt="3D logo of a futuristic game studio with neon blue and purple colors"
+          class="img-3d rounded-full mb-4 w-32 h-32 object-cover" height="150" loading="lazy" src="assets/colla1.jpg"
+          width="150" />
+        <h3 class="text-xl font-semibold text-green-400">
+          NeonPixel Studios
+        </h3>
+      </div>
+      <div
+        class="card-3d bg-indigo-800 rounded-xl p-6 flex flex-col items-center hover:shadow-green-500/70 transition-shadow">
+        <img alt="3D logo of a game technology partner with circuit board and digital elements"
+          class="img-3d rounded-full mb-4 w-32 h-32 object-cover" height="150" loading="lazy" src="assets/colla2.jpg"
+          width="150" />
+        <h3 class="text-xl font-semibold text-green-400">
+          GameTech Innovations
+        </h3>
+      </div>
+      <div
+        class="card-3d bg-indigo-800 rounded-xl p-6 flex flex-col items-center hover:shadow-green-500/70 transition-shadow">
+        <img alt="3D logo of a popular streaming platform with play button and vibrant colors"
+          class="img-3d rounded-full mb-4 w-32 h-32 object-cover" height="150" loading="lazy" src="assets/colla3.jpg"
+          width="150" />
+        <h3 class="text-xl font-semibold text-green-400">
+          StreamWave
+        </h3>
+      </div>
+      <div
+        class="card-3d bg-indigo-800 rounded-xl p-6 flex flex-col items-center hover:shadow-green-500/70 transition-shadow">
+        <img alt="3D logo of a gaming gear brand with headset and controller icon"
+          class="img-3d rounded-full mb-4 w-32 h-32 object-cover" height="150" loading="lazy" src="assets/colaa4.jpg"
+          width="150" />
+        <h3 class="text-xl font-semibold text-green-400">
+          ProGamer Gear
+        </h3>
+      </div>
+    </div>
+  </section>
+  <!-- Team Section -->
+  <section class="container mx-auto px-6 py-16" id="team">
+    <h2 class="text-4xl font-bold text-center mb-12 gradient-text select-none"
+      style="font-family: 'Orbitron', sans-serif;">
+      Meet the Team
+    </h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
+      <div
+        class="card-3d bg-indigo-800 rounded-xl p-6 flex flex-col items-center hover:shadow-green-500/70 transition-shadow">
+        <img alt="3D portrait of a young male gaming event organizer with headset and confident smile"
+          class="img-3d rounded-full mb-4 w-40 h-40 object-cover" height="200" loading="lazy" src="assets/photo1.jpg"
+          width="200" />
+        <h3 class="text-xl font-semibold text-green-400">
+          Alex Hunter
+        </h3>
+        <p class="text-green-300">
+          Event Coordinator
+        </p>
+      </div>
+      <div
+        class="card-3d bg-indigo-800 rounded-xl p-6 flex flex-col items-center hover:shadow-green-500/70 transition-shadow">
+        <img alt="3D portrait of a female esports strategist with headset and focused expression"
+          class="img-3d rounded-full mb-4 w-40 h-40 object-cover" height="200" loading="lazy" src="assets/photo2.jpg"
+          width="200" />
+        <h3 class="text-xl font-semibold text-green-400">
+          Maya Chen
+        </h3>
+        <p class="text-green-300">
+          Esports Strategist
+        </p>
+      </div>
+      <div
+        class="card-3d bg-indigo-800 rounded-xl p-6 flex flex-col items-center hover:shadow-green-500/70 transition-shadow">
+        <img alt="3D portrait of a male VR developer with glasses and friendly smile"
+          class="img-3d rounded-full mb-4 w-40 h-40 object-cover" height="200" loading="lazy" src="assets/photo3.jpg"
+          width="200" />
+        <h3 class="text-xl font-semibold text-green-400">
+          Jamal Ortiz
+        </h3>
+        <p class="text-green-300">
+          VR Developer
+        </p>
+      </div>
+      <div
+        class="card-3d bg-indigo-800 rounded-xl p-6 flex flex-col items-center hover:shadow-green-500/70 transition-shadow">
+        <img alt="3D portrait of a female social media manager with headset and cheerful expression"
+          class="img-3d rounded-full mb-4 w-40 h-40 object-cover" height="200" loading="lazy" src="assets/photo4.jpg"
+          width="200" />
+        <h3 class="text-xl font-semibold text-green-400">
+          Sofia Patel
+        </h3>
+        <p class="text-green-300">
+          Social Media Manager
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- Contact Section -->
+  <section class="bg-indigo-900 py-16 px-6" id="contact">
+    <h2 class="text-4xl font-bold text-center mb-12 gradient-text select-none"
+      style="font-family: 'Orbitron', sans-serif;">
+      Get in Touch
+    </h2>
+    <div class="max-w-9xl mx-auto flex flex-col md:flex-row items-center justify-around space-y-10 md:space-x-70">
+      <div class="flex space-x-7 text-4xl text-green-400">
+        <a aria-label="WhatsApp" class="social-icon" href="https://chat.whatsapp.com/Dx1gizyJZAi8ZWBMWk7Mdn"
+          rel="noopener" target="_blank" title="WhatsApp">
+          <i class="fab fa-whatsapp">
+          </i>
+        </a>
+        <a aria-label="YouTube" class="social-icon" href="https://youtube.com/@pirates-78?si=p3d_tYJPSpoOQE-g"
+          rel="noopener" target="_blank" title="YouTube">
+          <i class="fab fa-youtube">
+          </i>
+        </a>
+        <a aria-label="Instagram" class="social-icon"
+          href="https://www.instagram.com/psit_pirates?igsh=NTQwYnZnNXFjNDJu" rel="noopener" target="_blank"
+          title="Instagram">
+          <i class="fab fa-instagram">
+          </i>
+        </a>
+        <a aria-label="Discord" class="social-icon" href="https://discord.gg/jhA8csdy" rel="noopener" target="_blank"
+          title="Discord">
+          <i class="fab fa-discord">
+          </i>
+        </a>
+      </div>
+      <!-- Logo below social icons -->
+      <div class="flex justify-center mt-10 mb-6 logo-below-icons">
+        <img src="assets/PSIT-PIRATES.jpg" alt="PSIT PIRATES" class="h-48 w-auto rounded-lg shadow-lg" />
+      </div>
+      <form id="contactForm" class="w-full max-w-md bg-indigo-800 rounded-xl p-8 shadow-lg" method="POST" novalidate="">
+        <div class="mb-6">
+          <label class="block mb-2 font-semibold text-green-400" for="name">Name</label>
+          <input
+            class="w-full rounded-md px-4 py-3 text-indigo-900 font-semibold focus:outline-none focus:ring-2 focus:ring-green-400 border-2 border-green-300 bg-white placeholder-indigo-400"
+            id="name" name="name" placeholder="Your full name" required type="text" />
+        </div>
+        <div class="mb-6">
+          <label class="block mb-2 font-semibold text-green-400" for="email">Email</label>
+          <input
+            class="w-full rounded-md px-4 py-3 text-indigo-900 font-semibold focus:outline-none focus:ring-2 focus:ring-green-400 border-2 border-green-300 bg-white placeholder-indigo-400"
+            id="email" name="email" placeholder="you@example.com" required type="email" />
+        </div>
+        <div class="mb-6">
+          <label class="block mb-2 font-semibold text-green-400" for="message">Message</label>
+          <textarea
+            class="w-full rounded-md px-4 py-3 text-indigo-900 font-semibold focus:outline-none focus:ring-2 focus:ring-green-400 border-2 border-green-300 bg-white placeholder-indigo-400"
+            id="message" name="message" placeholder="Write your message here..." required rows="4"></textarea>
+        </div>
+        <button
+          class="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-3 rounded-lg shadow-lg transition transform hover:scale-105"
+          type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-indigo-900 py-6 text-center text-green-400 font-semibold select-none">
+    © 2025 PIRATES. All rights reserved.
+  </footer>
+  <!-- JavaScript file -->
+  <script src="script.js"></script>
+</body>
+
+</html>
