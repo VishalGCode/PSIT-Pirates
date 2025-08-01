@@ -53,9 +53,9 @@
       const message = document.getElementById('message').value.trim();
 
       // WhatsApp number (with country code, no + or spaces)
-      const whatsappPhone = '918471030498';
+      const whatsappPhone = '917007984896';
       // SMS number (with country code if needed, or just the number)
-      const smsPhone = '918471030498'; // Replace with founder's number
+      const smsPhone = '917007984896'; // Replace with founder's number
 
       const text = `New message for PIRATES:\n\nName: ${name}\nEmail: ${email}\nMessage: ${message}`;
 
